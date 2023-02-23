@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Archivo Index */
+body {
+    background-color: #929AAB;
+    font-family: 'Sofia Sans', sans-serif;
+}
+    
+#grid_container {
+    height: 100vh;
+    display: grid;
+    gap: 2rem;
+    grid-template-areas: "header header header"
+    "main main main"
+    "section1 section2 section3"
+    "footer footer footer";
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: rgb(35, 35, 35);
+        color: azure;
+    }
+
+    .h2Index {
+        color: white;
+    }
+}
+
+header {
+    grid-area: header;
+    background-color: black;
+}
+
+.titulo_gt {
+    font-family: none;
+    text-align: center;
+    color: white;
+    border: 15px solid black;
+    background-color: #929AAB;
+}
+
+.titulo_r {
+    color: firebrick;
+}
+
+    h1 {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding-top: 15px;
+        border: #929AAB;
+    }
+
+    .h1_container {
+        background-color: #929AAB;
+        border: 15px solid black;
+    }
+        
+        /* Menu de Navegacion */
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 35px;
+            cursor: pointer;
+        }
+
+        nav ul li a:hover {
+            color: #929AAB;
+        }
+
+        ul {
+            text-align: center;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+        }
+    
+    /* Texto Skyline gtr r34 */    
+    .skylinegtrr34 {
+        text-align: center;
+        padding-top: 20px;
+        }
+        
+    /* Imagen Skyline gtr r34 */
+    .skylineIntro {
+        width: 60%;
+        height: 60%;
+        display: block;
+        margin: auto;
+    }
+    
+    main h2 {
+        color: black;
+    }
+
+    .main_container {
+        grid-area: main;
+        margin: 50px;
+    }
+    
+    h3 {
+        color: #efb810;
+    }
+   
+    /* Imagen y texto de Motor, Carroceria, Interior */
+    .imagenes_inicio {
+        width: 300px;
+        height: 300px;
+    }
+
+    .section_containerMotor {
+        grid-area: section1;
+        /* grid-column: 1/4; */
+        margin: 50px;
+    }
+    .section_containerInterior {
+        grid-area: section2;
+        grid-column: 1/4;
+        margin: 50px;
+    }
+    .section_containerCarroceria {
+        grid-area: section3;
+        grid-column: 1/4;
+        margin: 50px;
+    }
+
+/* Comienza Footer */
+footer {
+    grid-area: footer;
+}    
+
+footer div {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    color: white;
+    padding: 1em;
+}
+
+li {
+    margin-right: 30px;
+}
+
+.div_social_logo {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    padding-left: 4em;
+}
+
+.social_logo {
+    list-style: none;
+    display: flex;
+}
+
+.social_logo li a img {
+    width: 30px;
+    height: 30px;
+}
+
+.social_logo li a img:hover {
+    transform: scale(1.35);
+}
+
+
+/* Archivo Historia */
+.historiaTitulos {
+    font-size: 25px;
+    color: #efb810;
+}
+
+.section_container_historia {
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+/* Versiones Destacadas */
+.main_container_versionesDestacadas {
+    margin: 50px;
+}
+
+.versiones_videos {
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+/* Archivo Pruebas */
+.pruebasManejo {
+    width: 200px;
+    height: 200px;
+}
+
+.main_container_pruebas {
+    height: 25vh;
+}
