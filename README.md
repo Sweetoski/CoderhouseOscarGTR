@@ -2,11 +2,11 @@
 
 Proyecto coderhouse de desarrollo web.
 
-## PreEntrega2+Diaz
+## PreEntrega3+Diaz
 
-Clase 5 a clase 11
+Clase 12 a clase 15
 
-Flexbox, Grids, Pseudoclases y Bem, Frameworks CSS y Bootstrap y como usar Git y Github.
+Sass 1, Sass 2, Animaciones y SEO y buenas practicas.
 
 ## Usage
 
