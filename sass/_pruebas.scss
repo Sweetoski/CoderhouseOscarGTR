@@ -39,13 +39,27 @@ header {
 }
 
 /* Menu de Navegación */
+/* Menu de Navegación */
 .navbar {
     background-color: rgb(0, 0, 0);
+    position: relative;
     a {
         color: white;
         padding: 30px;
         cursor: pointer;
         justify-content: center;
+        img {
+            width: 80px;
+            height: auto;
+        }
+        &:hover {
+            color: firebrick;
+            text-decoration: overline;
+        }
+    }
+    .span_burger {
+        color: white;
+        cursor: pointer;
         &:hover {
             color: firebrick;
         }
@@ -81,6 +95,10 @@ img {
     height: 25vh;
 }
 
+.section_container_pruebas {
+    margin: 50px;
+}
+
 /* Footer */
 footer {
     grid-area: footer;
@@ -90,10 +108,25 @@ footer {
         color: white;
         padding: 1em;
     }
-}    
+    li {
+        margin-right: 30px;
+    }
+}
 
-li {
-    margin-right: 30px;
+.footer_container {
+    display: flex;
+    justify-content: space-around;
+    ul {
+        list-style: none;
+        a {
+            color: white;
+            text-decoration: none;
+            &:hover {
+                color: #929AAB;
+                text-decoration: underline;
+            }
+        }
+    }
 }
 
 .div_social_logo {

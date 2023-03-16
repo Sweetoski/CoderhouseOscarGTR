@@ -13,26 +13,46 @@ body {
     font-family: 'Sofia Sans', sans-serif;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
     body {
         background-color: rgb(40, 40, 40);
         color: azure;
     }
 
-    .h2Index {
-        color: white;
-    }
-}
-@media screen and (max-width: 991px) {
     a:hover {
         font-size: $space;
     }
 
+    .texto_negro {
+        color: rgb(180, 180, 180);
+    }
+
     .section_container_historia {
         flex-direction: column;
+        color: white;
+        text-align: center;
+        article {
+            position: absolute;
+        }
     }
 }
-
+@media screen and (max-width: 768px) {
+    body {
+        background-color: rgb(40, 40, 40);
+        color: azure;
+    }
+}
+@media screen and (max-width: 642px) {
+    .section_container_historia {
+        img {
+            opacity: 0;
+            padding-top: 8rem;
+        }
+        p {
+            color: white;
+        }
+    }
+}
 
 header {
     background-color: black;
@@ -46,14 +66,26 @@ header {
 /* Menu de Navegación */
 .navbar {
     background-color: rgb(0, 0, 0);
+    position: relative;
     a {
         color: white;
         padding: 30px;
         cursor: pointer;
         justify-content: center;
+        img {
+            width: 80px;
+            height: auto;
+        }
         &:hover {
             color: firebrick;
-
+            text-decoration: overline;
+        }
+    }
+    .span_burger {
+        color: white;
+        cursor: pointer;
+        &:hover {
+            color: firebrick;
         }
     }
 }
@@ -73,6 +105,10 @@ img {
 .section_container_historia {
     margin: 50px;
     display: flex;
+    position: relative;
+    article {
+        padding: 1rem;
+    }
 }
 
 /* Footer */
@@ -84,10 +120,25 @@ footer {
         color: white;
         padding: 1em;
     }
-}    
+    li {
+        margin-right: 30px;
+    }
+}
 
-li {
-    margin-right: 30px;
+.footer_container {
+    display: flex;
+    justify-content: space-around;
+    ul {
+        list-style: none;
+        a {
+            color: white;
+            text-decoration: none;
+            &:hover {
+                color: #929AAB;
+                text-decoration: underline;
+            }
+        }
+    }
 }
 
 .div_social_logo {

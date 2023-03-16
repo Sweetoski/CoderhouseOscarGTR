@@ -36,8 +36,10 @@ header h1 {
 }
 
 /* Menu de Navegación */
+/* Menu de Navegación */
 .navbar {
   background-color: rgb(0, 0, 0);
+  position: relative;
 }
 .navbar a {
   color: white;
@@ -45,7 +47,19 @@ header h1 {
   cursor: pointer;
   justify-content: center;
 }
+.navbar a img {
+  width: 80px;
+  height: auto;
+}
 .navbar a:hover {
+  color: firebrick;
+  text-decoration: overline;
+}
+.navbar .span_burger {
+  color: white;
+  cursor: pointer;
+}
+.navbar .span_burger:hover {
   color: firebrick;
 }
 
@@ -78,6 +92,10 @@ img {
   height: 25vh;
 }
 
+.section_container_pruebas {
+  margin: 50px;
+}
+
 /* Footer */
 footer {
   grid-area: footer;
@@ -88,9 +106,24 @@ footer div {
   color: white;
   padding: 1em;
 }
-
-li {
+footer li {
   margin-right: 30px;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-around;
+}
+.footer_container ul {
+  list-style: none;
+}
+.footer_container ul a {
+  color: white;
+  text-decoration: none;
+}
+.footer_container ul a:hover {
+  color: #929AAB;
+  text-decoration: underline;
 }
 
 .div_social_logo {
