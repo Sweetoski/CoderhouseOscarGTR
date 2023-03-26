@@ -1,12 +1,12 @@
 # Coderhouse
 
-Proyecto coderhouse de desarrollo web.
+Proyecto Final coderhouse de desarrollo web.
 
-## PreEntrega3+Diaz
+## PF+Diaz
 
-Clase 12 a clase 15
+Clase 16 a clase 18 (ultima clase)
 
-Sass 1, Sass 2, Animaciones y SEO y buenas practicas.
+Servidores, Conociendo al Cliente y Proyecto Final.
 
 ## Usage
 
