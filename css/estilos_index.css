@@ -13,22 +13,24 @@ body {
 
 @media screen and (max-width: 991px) {
   body {
-    background-color: rgb(40, 40, 40);
+    background-color: rgb(50, 50, 50);
     color: azure;
+  }
+  nav a:hover {
+    font-size: 20px;
   }
   .h2Index {
     color: white;
   }
 }
-@media screen and (max-width: 768px) {
-  body {
-    background-color: rgb(40, 40, 40);
-    color: azure;
+@media screen and (max-width: 767px) {
+  .flex_columna {
+    flex-direction: column;
   }
 }
 header {
   grid-area: header;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 header .titulo_gt {
   font-family: none;
@@ -70,8 +72,12 @@ header h1 {
   color: white;
   cursor: pointer;
 }
-.navbar .span_burger:hover {
-  color: firebrick;
+.navbar .border_burger {
+  border-color: white;
+  cursor: pointer;
+}
+.navbar .border_burger:hover {
+  background-color: rgb(50, 50, 50);
 }
 
 /* Todas las Imagenes */
@@ -100,49 +106,39 @@ main h2 {
 }
 
 .main_container {
-  grid-area: main;
   margin: 50px;
 }
 
 /* Imagen y texto de Motor, Carroceria, Interior */
-.imagenes_inicio {
+.espacio_index {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.espacio_index section {
+  margin: 5%;
+}
+.espacio_index .carrusel_container {
+  width: 350px;
+  height: 250px;
+}
+.espacio_index .carrusel_container img {
   width: 300px;
-  height: 300px;
+  height: 200px;
 }
 
-.section_containerMotor {
-  grid-area: section1;
-  margin: 50px;
+/* Informacion final y logos */
+.info_nissan {
+  padding: 5% 25% 1% 25%;
 }
 
-.section_containerInterior {
-  grid-area: section2;
-  margin: 50px;
-}
-
-.section_containerCarroceria {
-  grid-area: section3;
-  margin: 50px;
-}
-
-.carrusel_container {
-  width: 400px;
-  height: 400px;
-  margin: 50px;
-}
-
-section {
-  margin: 100px 300px 10px 300px;
-}
-
-.section_logo_marcas {
-  width: 1000px;
+.logos_nissan {
   display: flex;
   align-items: center;
-  margin: 50px 150px 100px 150px;
   justify-content: space-around;
+  padding-top: 5rem;
+  padding-bottom: 8rem;
 }
-.section_logo_marcas img {
+.logos_nissan img {
   width: 120px;
 }
 
@@ -162,6 +158,7 @@ footer li {
 
 .footer_container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 .footer_container ul {

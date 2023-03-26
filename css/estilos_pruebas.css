@@ -12,18 +12,41 @@ body {
   font-family: "Sofia Sans", sans-serif;
 }
 
+@media screen and (max-width: 991px) {
+  body {
+    background-color: rgb(50, 50, 50);
+    color: azure;
+  }
+  nav a:hover {
+    font-size: 20px;
+  }
+  .section_container_pruebas {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section_container_pruebas div h3 {
+    color: rgb(50, 50, 50);
+    text-align: center;
+    border: 30px solid #929AAB;
+    width: 300px;
+    background-color: #929AAB;
+    border-radius: 30px;
+  }
+  .section_container_pruebas .boton_ver_mas {
+    color: black;
+    background-color: white;
+    border-color: white;
+  }
+  .section_container_pruebas .ver_mas_texto {
+    background-color: rgb(50, 50, 50);
+  }
+}
 @media screen and (max-width: 768px) {
   body {
-    background-color: rgb(40, 40, 40);
     color: azure;
   }
   .h2Index {
     color: white;
-  }
-}
-@media screen and (max-width: 991px) {
-  a:hover {
-    font-size: 20px;
   }
 }
 header {
@@ -31,11 +54,8 @@ header {
 }
 header h1 {
   font-size: 0px;
-  color: white;
-  text-align: center;
 }
 
-/* Menu de Navegación */
 /* Menu de Navegación */
 .navbar {
   background-color: rgb(0, 0, 0);
@@ -59,15 +79,24 @@ header h1 {
   color: white;
   cursor: pointer;
 }
-.navbar .span_burger:hover {
-  color: firebrick;
+.navbar .border_burger {
+  border-color: white;
+  cursor: pointer;
+}
+.navbar .border_burger:hover {
+  background-color: rgb(50, 50, 50);
 }
 
-h2 {
-  color: #929AAB;
+.main_container_pruebas {
+  height: 25vh;
+}
+.main_container_pruebas h2 {
+  color: black;
   text-align: center;
-  border: 50px solid rgb(40, 40, 40);
-  background-color: rgb(40, 40, 40);
+  padding: 50px;
+  background-image: url(../img/vacio\ silver_metal_background_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Imagenes */
@@ -79,21 +108,52 @@ img {
 
 /* Imagenes Pruebas de Manejo */
 .pruebasManejo {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 200px;
 }
 .pruebasManejo:hover {
-  width: 50%;
+  max-width: 100%;
+  width: 400px;
   height: auto;
   transition: all 2s;
 }
 
-.main_container_pruebas {
-  height: 25vh;
+.section_container_pruebas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 50px;
+}
+.section_container_pruebas h3 {
+  color: #929AAB;
+  text-align: center;
+  border: 60px solid rgb(40, 40, 40);
+  background-color: rgb(40, 40, 40);
+  border-radius: 30px;
+}
+.section_container_pruebas div {
+  padding: 2%;
+}
+.section_container_pruebas div a button {
+  color: #ffffff;
+  border: 60px solid rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+  border-radius: 200px;
+}
+.section_container_pruebas div a img {
+  border-radius: 30px;
 }
 
-.section_container_pruebas {
-  margin: 50px;
+.boton_ver_mas {
+  color: #929AAB;
+  background-color: rgb(50, 50, 50);
+  border-color: rgb(50, 50, 50);
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.ver_mas_texto {
+  background-color: #929AAB;
 }
 
 /* Footer */
@@ -112,6 +172,7 @@ footer li {
 
 .footer_container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 .footer_container ul {

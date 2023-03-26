@@ -16,24 +16,30 @@ body {
 
 @media screen and (max-width: 991px) {
     body {
-        background-color: rgb(40, 40, 40);
+        background-color: rgb(50, 50, 50);
         color: azure;
     }
-    
+
+    nav {
+        a {
+            &:hover {
+                font-size: $space;
+            }
+        }
+    }
     .h2Index {
         color: white;
     }
 }
-@media screen and (max-width: 768px) {
-    body {
-        background-color: rgb(40, 40, 40);
-        color: azure;
+@media screen and (max-width: 767px) {
+    .flex_columna {
+        flex-direction: column;
     }
 }
 
 header {
     grid-area: header;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     
     .titulo_gt {
         font-family: none;
@@ -70,15 +76,19 @@ header {
         &:hover {
             color: firebrick;
             text-decoration: overline;
-        }  
+        }
     }
     .span_burger {
         color: white;
         cursor: pointer;
+    }
+    .border_burger {
+        border-color: white;
+        cursor: pointer;
         &:hover {
-            color: firebrick;
+            background-color: rgb(50, 50, 50);
         }
-    }    
+    }
 }
 
 /* Todas las Imagenes */
@@ -107,49 +117,41 @@ main h2 {
 }
 
 .main_container {
-    grid-area: main;
     margin: 50px;
 }
 
 /* Imagen y texto de Motor, Carroceria, Interior */
-.imagenes_inicio {
-    width: 300px;
-    height: 300px;
+.espacio_index {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    section {
+        margin: 5%;
+    }
+    .carrusel_container {
+        width: 350px;
+        height: 250px;
+        img {
+            width: 300px;
+            height: 200px;
+        }
+    }
 }
 
-.section_containerMotor {
-    grid-area: section1;
-    margin: 50px;
-}
-.section_containerInterior {
-    grid-area: section2;
-    margin: 50px;
-}
-.section_containerCarroceria {
-    grid-area: section3;
-    margin: 50px;
+/* Informacion final y logos */
+.info_nissan {
+    padding: 5% 25% 1% 25%;
 }
 
-.carrusel_container {
-    width: 400px;
-    height: 400px;
-    margin: 50px;
-}
-
-section {
-    margin: 100px 300px 10px 300px;
-}
-
-.section_logo_marcas {
-    width: 1000px;
+.logos_nissan {
     display: flex;
     align-items: center;
-    margin: 50px 150px 100px 150px;
     justify-content: space-around;
+    padding-top: 5rem;
+    padding-bottom: 8rem;
     img {
         width: 120px;
     }
-}    
+}
 
 /* Footer */
 footer {
@@ -167,6 +169,7 @@ footer {
 
 .footer_container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     ul {
         list-style: none;

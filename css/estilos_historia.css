@@ -14,10 +14,10 @@ body {
 
 @media screen and (max-width: 991px) {
   body {
-    background-color: rgb(40, 40, 40);
+    background-color: rgb(50, 50, 50);
     color: azure;
   }
-  a:hover {
+  nav a:hover {
     font-size: 20px;
   }
   .texto_negro {
@@ -32,19 +32,20 @@ body {
     position: absolute;
   }
 }
-@media screen and (max-width: 768px) {
-  body {
-    background-color: rgb(40, 40, 40);
-    color: azure;
+@media screen and (max-width: 642px) {
+  .section_container_historia article {
+    font-size: 50%;
+  }
+  .section_container_historia article b {
+    font-size: 100%;
   }
 }
-@media screen and (max-width: 642px) {
-  .section_container_historia img {
-    opacity: 0;
-    padding-top: 8rem;
+@media screen and (max-width: 359px) {
+  .section_container_historia article {
+    font-size: 30%;
   }
-  .section_container_historia p {
-    color: white;
+  .section_container_historia article b {
+    font-size: 100%;
   }
 }
 header {
@@ -79,8 +80,24 @@ header h1 {
   color: white;
   cursor: pointer;
 }
-.navbar .span_burger:hover {
-  color: firebrick;
+.navbar .border_burger {
+  border-color: white;
+  cursor: pointer;
+}
+.navbar .border_burger:hover {
+  background-color: rgb(50, 50, 50);
+}
+
+.main_historia {
+  height: 25vh;
+}
+.main_historia h2 {
+  color: black;
+  text-align: center;
+  padding: 50px;
+  background-image: url(../img/vacio\ silver_metal_background_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Imagenes */
@@ -120,6 +137,7 @@ footer li {
 
 .footer_container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 .footer_container ul {

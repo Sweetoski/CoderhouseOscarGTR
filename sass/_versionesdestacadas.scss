@@ -13,20 +13,19 @@ body {
     font-family: 'Sofia Sans', sans-serif;
 }
 
-@media screen and (max-width: 768px) {
-    body {
-        background-color: rgb(40, 40, 40);
-        color: azure;
-    }
-
-    .h2Index {
-        color: white;
-    }
-}
 @media screen and (max-width: 991px) {
-    a:hover {
-        font-size: $space;
-    } 
+    body {
+        p {
+            text-align: center;
+        }
+    }
+    nav {
+        a {
+            &:hover {
+                font-size: $space;
+            }
+        }
+    }
 }
 
 header {
@@ -35,6 +34,14 @@ header {
         font-size: 0px;
         color: white;
         text-align: center;
+    }
+}
+iframe {
+    width: 100%;
+}
+@media screen and (max-width: 280px) {
+    iframe {
+        width: 100%;
     }
 }
 
@@ -59,28 +66,81 @@ header {
     .span_burger {
         color: white;
         cursor: pointer;
+    }
+    .border_burger {
+        border-color: white;
+        cursor: pointer;
         &:hover {
-            color: firebrick;
+            background-color: rgb(50, 50, 50);
         }
     }
 }
 
-/* Imagenes */
-img {
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-}
-
-.main_container_versionesDestacadas {
-    margin: 50px;
+.main_versiones {
+    h2 {
+        text-align: center;
+        margin: 50px;
+    }
 }
 
 .versiones_videos {
-    background-color: rgb(40, 40, 40);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    .versiones_videos1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        p {
+            font-size: xx-large;
+        }
+        iframe {
+            border-radius: 30px;
+        }
+    }
+    .versiones_videos2 {
+        background-color: rgb(50, 50, 50);
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        p {
+            font-size: xx-large;
+        }
+        iframe {
+            border-radius: 30px;
+        }
+    }
+    .versiones_videos3 {
+        background-color: rgb(50, 50, 50);
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        p {
+            font-size: xx-large;
+        }
+        iframe {
+            border-radius: 30px;
+        }
+    }
+    .versiones_videos4 {
+        background-image: url(../img/vacio-guardar-textura-habitacion-luz.jpg);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        p {
+            font-size: xx-large;
+        }
+        iframe {
+            border-radius: 30px;
+        }
+    }
 }
 
 /* Footer */
@@ -99,6 +159,7 @@ footer {
 
 .footer_container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     ul {
         list-style: none;

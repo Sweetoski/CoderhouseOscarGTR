@@ -19,7 +19,7 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html"><img src="../img/GTR Logo Real.png" alt="Logo GTR"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler border_burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="span_burger"><i class="fa-solid fa-burger"></i></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -36,23 +36,25 @@
 
     <div class="div_container_contacto">
       <div class="container">
-        <div class="row">
+        <div class="row flex_container_wrap">
           <div class="col">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d481726.88751482655!2d-99.42382704992136!3d19.391166845415118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0026db097507%3A0x54061076265ee841!2sCiudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1674543068898!5m2!1ses-419!2smx" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d481726.88751482655!2d-99.42382704992136!3d19.391166845415118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0026db097507%3A0x54061076265ee841!2sCiudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1674543068898!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div class="col">
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-          </div>
+            <h2><b>ENVIANOS TUS COMENTARIOS</b></h2>
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text"></div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+
           </div>
         </div>
       </div>

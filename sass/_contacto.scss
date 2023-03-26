@@ -13,22 +13,26 @@ body {
     font-family: 'Sofia Sans', sans-serif;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
     body {
-        background-color: rgb(40, 40, 40);
+        background-color: rgb(50, 50, 50);
         color: azure;
     }
 
-    .h2Index {
-        color: white;
+    nav {
+        a {
+            &:hover {
+                font-size: $space;
+            }
+        }
     }
 }
-@media screen and (max-width: 991px) {
-    a:hover {
-        font-size: $space;
-    } 
-}
 
+@media screen and (max-width: 768px) {
+    body {
+        color: azure;
+    }
+}
 
 header {
     background-color: black;
@@ -60,14 +64,28 @@ header {
     .span_burger {
         color: white;
         cursor: pointer;
+    }
+    .border_burger {
+        border-color: white;
+        cursor: pointer;
         &:hover {
-            color: firebrick;
+            background-color: rgb(50, 50, 50);
         }
     }
 }
 
-.div_container_contacto {
-    margin: 50px;
+iframe {
+    max-width: 100%;
+}
+
+.flex_container_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px;
+    h2 {
+        text-align: center;
+        padding-bottom: 10%;
+    }
 }
 
 /* Footer */
@@ -86,6 +104,7 @@ footer {
 
 .footer_container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     ul {
         list-style: none;
